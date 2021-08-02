@@ -1,0 +1,16 @@
+.items__list {
+  @include list-reset;
+}
+
+.items__link {
+  line-height: 20px;
+  color: $text-radio;
+}
+
+.items__data {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-color;
+  text-transform: initial;
+}

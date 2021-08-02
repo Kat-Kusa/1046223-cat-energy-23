@@ -1,1 +1,37 @@
-// Начните писать стили здесь
+//GLOBAL
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/scaffolging.scss";
+@import "global/mixins.scss";
+
+//BLOCKS
+@import "blocks/title.scss";
+@import "blocks/button.scss";
+@import "blocks/paragraph.scss";
+//header
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+
+//main
+@import "blocks/promoblock.scss";
+@import "blocks/product-info.scss";
+@import "blocks/description.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts-info.scss";
+
+//footer
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/html-social.scss";
+
+//Form
+@import "blocks/form.scss";
+@import "blocks/page-form.scss";
+@import "blocks/form-input.scss";
+@import "blocks/radio-form.scss";
+
+//Catalog
+@import "blocks/page-catalog.scss";
+@import "blocks/items.scss";
+@import "blocks/item-show-block.scss";
+@import "blocks/extra-items.scss";

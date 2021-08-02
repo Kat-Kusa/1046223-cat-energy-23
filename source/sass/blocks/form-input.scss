@@ -1,0 +1,28 @@
+.form-input__label {
+  color: $text-color;
+}
+
+.form-input__input {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $text-color;
+  border: 1px solid $input-border;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: $text-color;
+  }
+
+  &:hover {
+    border: 1px solid $input-border-hover;
+  }
+
+  &:focus {
+    border: 2px solid $text-color;
+  }
+
+  &:invalid {
+    border: 2px solid $error;
+  }
+}

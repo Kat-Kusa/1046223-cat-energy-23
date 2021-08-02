@@ -1,0 +1,33 @@
+.item-show-block__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.item-show-block__span {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: initial;
+}
+
+.item-show-block__button {
+  background-color: $basic-bg;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-items-hover;
+  }
+}
+
+.item-show-block__button-span {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

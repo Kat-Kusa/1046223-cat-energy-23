@@ -1,0 +1,19 @@
+.social__list {
+  @include list-reset;
+}
+
+.social__svg {
+  stroke: $dark-grey;
+  fill: none;
+}
+
+.social__link {
+  &:hover .social__svg,
+  &:focus .social__svg {
+    stroke: $btn-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

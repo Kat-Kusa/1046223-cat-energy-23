@@ -1,0 +1,22 @@
+.html-social__span {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color;
+  text-transform: initial;
+}
+
+.html-social__svg {
+  fill: $dark-grey;
+}
+
+.html-social {
+  &:hover .html-social__svg,
+  &:focus .html-social__svg {
+    fill: $btn-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
