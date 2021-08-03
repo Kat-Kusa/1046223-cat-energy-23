@@ -1,0 +1,32 @@
+.extra-items__data {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: initial;
+  color: $text-color;
+}
+
+.extra-items__data--big {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $text-radio;
+}
+
+.extra-items__present {
+  background-color: $basic-green;
+  background-image: url("../../img/gift-photo-mobile.png");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 289px;
+}
+
+.extra-items__text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: initial;
+  color: $basic-white;
+}

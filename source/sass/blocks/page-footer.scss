@@ -1,0 +1,15 @@
+.page-footer {
+  background-color: $basic-bg;
+  padding-top: 39px;
+}
+
+.page-footer__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
