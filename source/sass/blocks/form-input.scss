@@ -5,7 +5,7 @@
 .form-input__input {
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   color: $text-color;
   border: 1px solid $input-border;
   text-transform: uppercase;

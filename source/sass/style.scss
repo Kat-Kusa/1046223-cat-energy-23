@@ -1,23 +1,26 @@
 //GLOBAL
-@import "global/fonts.scss";
-@import "global/variables.scss";
-@import "global/scaffolging.scss";
 @import "global/mixins.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/scaffolging.scss";
 
 //BLOCKS
 @import "blocks/title.scss";
 @import "blocks/button.scss";
 @import "blocks/paragraph.scss";
+@import "blocks/wrapper.scss";
 //header
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 
 //main
+@import "blocks/page-main.scss";
 @import "blocks/promoblock.scss";
 @import "blocks/product-info.scss";
 @import "blocks/description.scss";
 @import "blocks/example.scss";
 @import "blocks/contacts-info.scss";
+@import "blocks/map.scss";
 
 //footer
 @import "blocks/page-footer.scss";

@@ -1,5 +1,5 @@
 .extra-items__data {
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-size: 14px;
   line-height: 14px;
   text-transform: initial;
@@ -7,7 +7,7 @@
 }
 
 .extra-items__data--big {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -23,7 +23,7 @@
 }
 
 .extra-items__text {
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

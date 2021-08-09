@@ -1,14 +1,86 @@
 .promoblock {
-  background-color: $basic-green;
+  background: linear-gradient(to bottom, $basic-green 75%, $basic-white 70% 20%);
+}
+
+.promoblock__container {
+  background-image: url("../../img/background-green-cat.png");
+  background-size: 320px 302px;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .promoblock__title {
   color: $basic-white;
+  margin-bottom: 25px;
 }
 
 .promoblock__slogan {
+  display: block;
   font-weight: 400;
   line-height: 14px;
   font-size: 14px;
   color: $basic-white;
+  margin-bottom: 29px;
+}
+
+.promoblock__link {
+  padding: 7px 63px;
+}
+
+@media (min-width: $tablet-width) {
+  .promoblock {
+    background: transparent;
+  }
+
+  .promoblock__container {
+    background-image: none;
+    position: relative;
+  }
+
+  .promoblock__title {
+    color: $basic-black;
+    padding-left: 83px;
+    padding-right: 200px;
+    margin-bottom: 41px;
+  }
+
+  .promoblock__slogan {
+    color: $basic-black;
+    line-height: 20px;
+    font-size: 20px;
+    padding-left: 83px;
+    margin-bottom: 49px;
+  }
+
+  .promoblock__image {
+    position: absolute;
+    z-index: -1;
+    top: 200px;
+    width: 709px;
+    height: 609px;
+  }
+
+  .promoblock__link {
+    display: flex;
+    width: fit-content;
+    padding: 14px 26px;
+    margin-left: 83px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promoblock__title {
+    padding-left: 80px;
+    padding-right: 700px;
+  }
+
+  .promoblock__slogan {
+    padding-left: 80px;
+    margin-bottom: 53px;
+  }
+
+  .promoblock__image {
+    top: -80px;
+    right: 200px;
+  }
 }

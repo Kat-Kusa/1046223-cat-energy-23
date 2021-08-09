@@ -1,3 +1,18 @@
+.page-header {
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  margin-bottom: 17px;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__img {
+  margin-right: 57px;
+}
+
 .page-header__logo {
   &:hover,
   &:focus {
@@ -6,5 +21,26 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    grid-template-rows: initial;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding-top: 24px;
+    margin-bottom: 64px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 53px;
+    margin-bottom: 111px;
   }
 }
