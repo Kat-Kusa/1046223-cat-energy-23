@@ -1,0 +1,40 @@
+.page-main__promoblock {
+  margin-bottom: 22px;
+}
+
+.page-main__product-info {
+  margin-bottom: 7px;
+}
+
+.page-main__description {
+  margin-bottom: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__promoblock {
+    margin-bottom: 600px;
+  }
+
+  .page-main__product-info {
+    margin-bottom: 45px;
+  }
+
+  .page-main__description {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__promoblock {
+    margin-bottom: 267px;
+  }
+
+  .page-main__product-info {
+    display: flex;
+    margin-bottom: 71px;
+  }
+
+  .page-main__description {
+    margin-bottom: 69px;
+  }
+}

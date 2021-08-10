@@ -1,26 +1,43 @@
-.title--big {
+.title {
+  margin: 0;
+  text-transform: initial;
   font-weight: 400;
+}
+
+.title--big {
   font-size: 36px;
   line-height: 36px;
-  text-transform: initial;
 }
 
 .title--small {
-  font-weight: 400;
   line-height: 37px;
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 .title--medium {
-  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-transform: initial;
 }
 
 .title--main {
-  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  text-transform: initial;
+}
+
+@media (min-width: $tablet-width) {
+  .title--big {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .title--small {
+    line-height: 36px;
+    font-size: 36px;
+  }
+
+  .title--medium {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

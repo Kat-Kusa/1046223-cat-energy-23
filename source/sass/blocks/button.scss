@@ -6,7 +6,7 @@
 }
 
 .button--main {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $main-font;
   font-size: 14px;
   color: $basic-white;
   background-color: $basic-green;
@@ -24,5 +24,12 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button__span {
+    font-size: 20px;
+    line-height: 20px;
   }
 }

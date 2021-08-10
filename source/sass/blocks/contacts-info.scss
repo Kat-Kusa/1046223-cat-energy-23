@@ -5,10 +5,60 @@
 }
 
 .contacts-info__address {
-  font-family: "Arial", sans-serif;
+  font-family: $second-font;
   font-size: 14px;
   line-height: 20px;
   color: $text-color;
   text-transform: initial;
   font-style: normal;
+}
+
+.contacts-info__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 26px;
+}
+
+.contacts-info__map {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-info__container {
+    padding: 66px 40px 51px;
+  }
+
+  .contacts-info__text {
+    font-size: 20px;
+    line-height: 21px;
+    margin-right: 320px;
+  }
+
+  .contacts-info__address {
+    font-size: 16px;
+    text-align: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-info {
+    position: relative;
+  }
+
+  .contacts-info__container {
+    position: absolute;
+    top: 95px;
+    background-color: $basic-white;
+    width: 490px;
+  }
+
+  .contacts-info__text {
+    margin-right: 150px;
+  }
+
+  .contacts-info__address {
+    text-align: center;
+  }
 }
