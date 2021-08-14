@@ -1,5 +1,4 @@
 .main-nav {
-  display: flex;
   justify-content: center;
 }
 
@@ -12,10 +11,6 @@
   font-size: 20px;
   line-height: 20px;
   color: $basic-black;
-
-  &--active {
-    border-bottom: 2px solid $basic-green;
-  }
 
   &:hover,
   &:focus {
@@ -33,15 +28,11 @@
   position: relative;
   padding: 22px 0 24px;
 
-  &:last-child {
-    padding-bottom: 5px;
-  }
-
-  &::before {
+  &::after {
     content: "";
     width: 320px;
     height: 1px;
-    top: 0;
+    bottom: 0;
     background-color: $menu-border;
     position: absolute;
   }
@@ -64,7 +55,7 @@
       margin-right: 35px;
     }
 
-    &::before {
+    &::after {
       width: 0;
       height: 0;
     }
@@ -74,6 +65,12 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding-top: 8px;
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+      padding-bottom: 8px;
+    }
   }
 }
 

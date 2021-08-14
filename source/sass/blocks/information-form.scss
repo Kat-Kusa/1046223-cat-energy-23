@@ -1,0 +1,17 @@
+.information-form__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .information-form__container {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

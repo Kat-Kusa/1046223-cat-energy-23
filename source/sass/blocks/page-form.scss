@@ -1,7 +1,53 @@
 .page-form__paragraph {
   font-size: 14px;
+  margin: 0;
+  margin-bottom: 39px;
+  padding-right: 54px;
 }
 
 .page-form__contacts-info {
   background-color: $basic-bg;
+}
+
+.page-form__title {
+  margin-bottom: 37px;
+}
+
+.page-form__form {
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-form__title {
+    padding-left: 50px;
+    margin-bottom: 56px;
+  }
+
+  .page-form__paragraph {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 300px;
+    padding-left: 50px;
+    margin-bottom: 66px;
+  }
+
+  .page-form__form {
+    margin-bottom: 72px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-form__title {
+    padding: 0;
+  }
+
+  .page-form__paragraph {
+    padding: 0;
+    width: 325px;
+  }
+
+  .page-form__form {
+    margin-bottom: 82px;
+  }
 }

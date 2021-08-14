@@ -25,25 +25,25 @@
 
 .description__item--lief {
   &::before {
-    background-image: url(".././img/icon_leaf.svg");
+    background-image: url("../img/icon_leaf.svg");
   }
 }
 
 .description__item--tide {
   &::before {
-    background-image: url(".././img/icon_tub.svg");
+    background-image: url("../img/icon_tub.svg");
   }
 }
 
 .description__item--eat {
   &::before {
-    background-image: url(".././img/icon_eat.svg");
+    background-image: url("../img/icon_eat.svg");
   }
 }
 
 .description__item--time {
   &::before {
-    background-image: url(".././img/icon_alarm.svg");
+    background-image: url("../img/icon_alarm.svg");
   }
 }
 

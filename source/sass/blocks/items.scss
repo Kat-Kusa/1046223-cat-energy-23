@@ -5,6 +5,8 @@
 .items__link {
   line-height: 20px;
   color: $text-radio;
+  width: 76px;
+  margin-bottom: 18px;
 }
 
 .items__data {
@@ -13,4 +15,137 @@
   line-height: 16px;
   color: $text-color;
   text-transform: initial;
+
+  &:not(:last-child) {
+    padding-right: 58px;
+  }
+
+  &:last-child {
+    text-align: end;
+  }
+}
+
+.items__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 19px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &::before {
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: 0;
+    left: -20px;
+    background-color: $menu-border;
+    position: absolute;
+  }
+}
+
+.items__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.items__link-image {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+
+.items__container {
+  display: flex;
+  flex-direction: column;
+  width: 142px;
+}
+
+.items__button {
+  padding: 10px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .items__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .items__item {
+    padding: 0 36px 39px;
+    margin-bottom: 60px;
+    background: linear-gradient(to bottom, $basic-white 20%, $basic-bg 20% 80%);
+    width: 252px;
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .items__wrapper {
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
+
+  .items__container {
+    width: 100%;
+  }
+
+  .items__link {
+    width: 150px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+
+    & > br {
+      display: none;
+    }
+  }
+
+  .items__link-image {
+    justify-content: center;
+  }
+
+  .items__image {
+    width: 161px;
+    height: 172px;
+    padding-top: 36px;
+  }
+
+  .items__image--big {
+    width: 168px;
+    height: 200px;
+    padding-top: 8px;
+  }
+
+  .items__data {
+    font-size: 16px;
+  }
+
+  .items__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0 8px;
+    border-bottom: 1px solid $input-border-hover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .items__item {
+    padding: 0 30px 40px 35px;
+    width: 180px;
+  }
+
+  .items__link {
+    margin-left: 20px;
+  }
 }
