@@ -23,6 +23,21 @@
 .title--main {
   font-size: 24px;
   line-height: 26px;
+  position: relative;
+  background-color: $basic-white;
+  padding-right: 22px;
+  width: fit-content;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 300px;
+    background-color: #68b738;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -39,5 +54,27 @@
   .title--medium {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .title--main {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 39px;
+    padding-right: 38px;
+
+    &::after {
+      width: 769px;
+      top: 20px;
+      left: -31px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title--main {
+    &::after {
+      width: 1440px;
+      left: -110px;
+    }
   }
 }

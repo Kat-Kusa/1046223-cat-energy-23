@@ -13,7 +13,7 @@
 
 .product-info--weight-loss {
   &::before {
-    background-image: url(".././img/cat_back.svg");
+    background-image: url("../img/cat_back.svg");
     width: 50px;
     height: 53px;
     top: 20px;
@@ -22,7 +22,7 @@
 
 .product-info--weight-gain {
   &::before {
-    background-image: url(".././img/cat_big.svg");
+    background-image: url("../img/cat_big.svg");
     width: 67px;
     height: 50px;
     left: 10px;
@@ -38,7 +38,7 @@
     content: "";
     position: absolute;
     background-repeat: no-repeat;
-    background-image: url(".././img/icon_arrow-small.svg");
+    background-image: url("../img/icon_arrow-small.svg");
     width: 32px;
     height: 12px;
     left: 90px;
@@ -47,7 +47,7 @@
 
   &:hover::after,
   &:focus::after {
-    background-image: url(".././img/icon_arrow.svg");
+    background-image: url("../img/icon_arrow.svg");
   }
 
   &:active {

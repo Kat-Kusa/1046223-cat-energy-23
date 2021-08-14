@@ -1,3 +1,34 @@
 .page-catalog__contacts-info {
   background-color: $basic-bg;
 }
+
+.page-catalog__title {
+  position: relative;
+  padding-top: 27px;
+  margin-bottom: 41px;
+
+  &::before {
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: 0;
+    left: -20px;
+    background-color: $menu-border;
+    position: absolute;
+  }
+}
+
+.page-catalog__items {
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog__title {
+    padding-top: 0;
+    margin-bottom: 82px;
+
+    &::before {
+      display: none;
+    }
+  }
+}

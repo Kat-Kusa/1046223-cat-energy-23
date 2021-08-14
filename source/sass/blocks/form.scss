@@ -1,3 +1,8 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__textarea {
   font-size: 16px;
   line-height: 18px;
@@ -7,6 +12,8 @@
   text-transform: uppercase;
   overflow: hidden;
   resize: none;
+  padding: 9px 12px 9px 15px;
+  margin-bottom: 22px;
 
   &::placeholder {
     color: $text-color;
@@ -30,4 +37,142 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: initial;
+  text-align: center;
+}
+
+.form__information-form {
+  position: relative;
+  padding-bottom: 27px;
+}
+
+.form__radio-form {
+  position: relative;
+  padding-top: 22px;
+  margin-bottom: 26px;
+}
+
+.form__information-form,
+.form__radio-form {
+  &::after {
+    content: "";
+    width: 320px;
+    height: 1px;
+    bottom: 0;
+    left: -20px;
+    background-color: #e6e6e6;
+    position: absolute;
+  }
+}
+
+.form__title {
+  margin-bottom: 35px;
+}
+
+.form__contacts-form {
+  margin-bottom: 24px;
+}
+
+.form__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__button {
+  padding: 7px;
+  margin-bottom: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__information-form {
+    padding: 0 50px;
+    margin-bottom: 72px;
+  }
+
+  .form__information-form,
+  .form__radio-form {
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__radio-form {
+    padding: 0 50px;
+    margin-bottom: 71px;
+  }
+
+  .form__title {
+    margin-bottom: 76px;
+  }
+
+  .form__contacts-form {
+    padding: 0 50px;
+    margin-bottom: 65px;
+  }
+
+  .form__textarea {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 50px 65px;
+  }
+
+  .form__inner {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    padding: 0 50px;
+    align-items: baseline;
+  }
+
+  .form__span {
+    font-size: 16px;
+    text-align: start;
+    padding-left: 45px;
+  }
+
+  .form__button {
+    margin-bottom: 0;
+  }
+
+  .form__fieldset {
+    padding: 0 50px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__container {
+    &--desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 69px;
+    }
+  }
+
+  .form__information-form {
+    padding: 0;
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .form__radio-form {
+    padding: 0;
+    margin: 0;
+    margin-left: 40px;
+  }
+
+  .form__contacts-form {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    justify-content: space-between;
+  }
+
+  .form__textarea {
+    margin: 0;
+    margin-bottom: 67px;
+  }
+
+  .form__fieldset {
+    padding: 0;
+    margin-bottom: 61px;
+  }
 }
