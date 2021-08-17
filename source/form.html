@@ -15,23 +15,23 @@
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__container">
-        <a class="page-header__logo" href="./index.html">
+        <a class="page-header__logo" href="#">
           <img src="./img/logo-mobile.svg" width="191" height="38" alt="Логотип компании Кэт Энерджи">
         </a>
-        <button class="page-header__toggle button" type="button">
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-      </div>
-      <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="./index.html">Главная</a>
+            <a class="main-nav__link main-nav__link--active" href="./index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="#">Подбор программы</a>
+            <a class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -55,30 +55,30 @@
             </div>
             <div class="information-form__container form-input">
               <label class="information-form__label form-input__label" for="weight-form">Вес (кг):*</label>
-              <input class="information-form__input form-input__input" name="weight" type="text" id="weight-form"
+              <input class="information-form__input form-input__input" name="weight" type="number" id="weight-form"
                 placeholder="7">
             </div>
             <div class="information-form__container form-input">
               <label class="information-form__label form-input__label" for="age-form">Возраст (лет):</label>
-              <input class="information-form__input form-input__input" name="age" type="text" id="age-form"
+              <input class="information-form__input form-input__input" name="age" type="number" id="age-form"
                 placeholder="7">
             </div>
           </div>
           <div class="form__radio-form radio-form">
             <fieldset class="radio-form__fieldset">
               <label class="radio-form__label">
-                <input class="visually-hidden radio-form__input" type="radio" name="loss-weight" value="loss-weight"
+                <input class="visually-hidden radio-form__input" type="radio" name="programm-type" value="loss-weight"
                   checked>
                 <span class="radio-form__indicator"></span>
                 <span class="radio-form__span">Похудение</span>
               </label>
               <label class="radio-form__label">
-                <input class="visually-hidden radio-form__input" type="radio" name="mass" value="mass">
+                <input class="visually-hidden radio-form__input" type="radio" name="programm-type" value="mass">
                 <span class="radio-form__indicator"></span>
                 <span class="radio-form__span">Набор массы</span>
               </label>
               <label class="radio-form__label">
-                <input class="visually-hidden radio-form__input" type="radio" name="advice" value="advice">
+                <input class="visually-hidden radio-form__input" type="radio" name="programm-type" value="advice">
                 <span class="radio-form__indicator"></span>
                 <span class="radio-form__span">Не знаю (Нужен ваш совет)</span>
               </label>
@@ -97,8 +97,8 @@
             </div>
             <div class="contacts-form__container contacts-form__container--phone form-input">
               <label class="contacts-form__label form-input__label" for="contacts-form-number">Телефон:*</label>
-              <input class="contacts-form__input form-input__input" name="number" type="number"
-                id="contacts-form-number" placeholder="8 (960) 900-60-90">
+              <input class="contacts-form__input form-input__input" name="number" type="tel" id="contacts-form-number"
+                placeholder="8 (960) 900-60-90">
             </div>
           </div>
         </div>
@@ -211,6 +211,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
