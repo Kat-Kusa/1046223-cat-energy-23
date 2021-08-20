@@ -16,4 +16,8 @@
   .wrapper {
     width: 1220px;
   }
+
+  .wrapper--bg {
+    background: linear-gradient(to right, $basic-white 50%, $basic-green 50%);
+  }
 }

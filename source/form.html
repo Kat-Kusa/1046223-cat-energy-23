@@ -15,8 +15,12 @@
   <div class="wrapper">
     <header class="page-header">
       <div class="page-header__container">
-        <a class="page-header__logo" href="#">
-          <img src="./img/logo-mobile.svg" width="191" height="38" alt="Логотип компании Кэт Энерджи">
+        <a class="page-header__logo" href="./index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="./img/logo-mobile.svg" width="191" height="38" alt="Логотип компании Кэт Энерджи">
+          </picture>
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -25,13 +29,13 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="./index.html">Главная</a>
+            <a class="main-nav__link" href="./index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -154,15 +158,19 @@
         </div>
       </div>
       <div class="contacts-info__map map">
-        <img class="map__image" src="./img/location-mobile.png" width="320" height="362"
-          alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/location.png 1x, img/location@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/location-tablet@2x.png 2x">
+          <img class="map__image" src="img/location-mobile.png" srcset="img/location-mobile@2x.png 2x" width="320"
+            height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="wrapper">
       <div class="page-footer__container">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="./index.html">
           <img src="./img/footer-logo.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
         </a>
         <section class="page-footer__social social">

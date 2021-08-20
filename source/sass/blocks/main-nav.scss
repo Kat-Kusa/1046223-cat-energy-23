@@ -145,16 +145,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    background-color: $basic-green;
-  }
-
   .main-nav__link {
     font-size: 20px;
     line-height: 30px;
-    color: $basic-white;
 
-    &--active {
+    &--index {
+      color: $basic-white;
+    }
+
+    &--index-active {
       border-bottom: 2px solid $basic-white;
     }
   }
